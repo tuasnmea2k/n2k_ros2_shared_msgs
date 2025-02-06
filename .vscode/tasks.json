@@ -1,0 +1,52 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "colcon: build",
+            "type": "shell",
+            "command": "colcon build --packages-select n2k_ros_gw --cmake-args -DCMAKE_BUILD_TYPE=Debug -DNMEA2000_MSG_RX_DEBUG=ON -DNMEA2000_MSG_TX_DEBUG=ON",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "CMake Debug Build",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+              "-S",
+              "${workspaceFolder}/tools/CSimulations/",
+              "-B",
+              "${workspaceFolder}/tools/CSimulations/build/",
+              "-DCMAKE_BUILD_TYPE=Debug"
+            ],
+            "group": {
+              "kind": "build",
+              "isDefault": true
+            },
+            "detail": "Configure and build the project in Debug mode using CMake."
+          },
+          {
+            "label": "Build Debug and install",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+              "--build",
+              "${workspaceFolder}/tools/CSimulations/build/",
+              "--target",
+              "build_and_install"
+            ],
+            "group": {
+              "kind": "build",
+              "isDefault": false
+            },
+            "dependsOn": "CMake Debug Build",
+            "detail": "Run the build for the Debug configuration."
+          }
+    ]
+}
