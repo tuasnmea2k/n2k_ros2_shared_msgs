@@ -20,6 +20,12 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GnssPositionRapidUpdate129025.msg"
   "msg/WindData130306.msg"
   "msg/GnssPositionData129029.msg"
+  "msg/Attitude127257.msg"
+  "msg/Rudder127245.msg"
+  "msg/Heave127252.msg"
+  "msg/RateOfTurn127251.msg"
+  "msg/EngineParametersRapidUpdate127488.msg"
+  "msg/MagneticVariation127258.msg"
 )
 
 if(BUILD_TESTING)
