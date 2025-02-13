@@ -5,7 +5,7 @@
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
 
-uint32  timestamp
+Nmea2kCommonMsgHeaderStruct header
 uint8   sid
 float32 rate    # radians
 

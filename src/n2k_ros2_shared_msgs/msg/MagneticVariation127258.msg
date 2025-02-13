@@ -9,7 +9,7 @@
 #       variation is 16 bit float but converted to float32 in ROS2
 #       
 
-uint32  timestamp
+Nmea2kCommonMsgHeaderStruct header
 uint8   sid
 uint8   source
 uint16  date 

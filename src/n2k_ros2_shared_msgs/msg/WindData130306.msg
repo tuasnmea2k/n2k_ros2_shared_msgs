@@ -7,7 +7,7 @@
 #       This means that 24 bits are used for reference, but since there is not 
 #       such data type available the closed bigger datatype is used - uint32.
 
-uint32 timestamp
+Nmea2kCommonMsgHeaderStruct header
 uint8 sid
 uint16 windspeed
 uint16 windangle

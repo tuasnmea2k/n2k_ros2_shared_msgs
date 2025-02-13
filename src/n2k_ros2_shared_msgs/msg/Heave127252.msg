@@ -6,7 +6,7 @@
 #
 # NOTE heave is 16 bit float but convertes in float32 in ROS2
 
-uint32  timestamp
+Nmea2kCommonMsgHeaderStruct header
 uint8   sid
 float32 heave   
 

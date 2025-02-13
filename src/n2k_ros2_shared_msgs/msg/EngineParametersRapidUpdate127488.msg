@@ -13,7 +13,7 @@
 #           0	Single Engine or Dual Engine Port
 #           1	Dual Engine Starboard
 
-uint32  timestamp
+Nmea2kCommonMsgHeaderStruct header
 uint8   instance
 float32 speed
 uint16  boost_pressure

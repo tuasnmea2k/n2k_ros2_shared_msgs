@@ -15,7 +15,7 @@
 #       1	Move to starboard
 #       2	Move to port
 
-uint32  timestamp
+Nmea2kCommonMsgHeaderStruct header
 uint8   instance
 uint8   direction_rudder 
 float32 angle_order         # radians

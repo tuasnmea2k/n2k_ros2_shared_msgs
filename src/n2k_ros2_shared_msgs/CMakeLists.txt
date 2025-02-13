@@ -15,7 +15,8 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/ReferenceStationsStruct.msg"
+  "msg/ReferenceStationsStruct.msg"               # structs used in GnssPositionData129029.msg
+  "msg/Nmea2kCommonMsgHeaderStruct.msg"           # common header for all messages
   "msg/VesselHeading127250.msg"
   "msg/GnssPositionRapidUpdate129025.msg"
   "msg/WindData130306.msg"
@@ -26,6 +27,13 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/RateOfTurn127251.msg"
   "msg/EngineParametersRapidUpdate127488.msg"
   "msg/MagneticVariation127258.msg"
+  "msg/CogSogRapidUpdate129026.msg"
+  "msg/AisAidsToNavigationReport129041.msg"
+  "msg/AisClassAPositionReport129038.msg"
+  "msg/AisClassAStaticAndVoyageRelatedData129794.msg"
+  "msg/AisClassBExtendedPositionReport129040.msg"
+  "msg/AisClassBPositionReport129039.msg"
+
 )
 
 if(BUILD_TESTING)

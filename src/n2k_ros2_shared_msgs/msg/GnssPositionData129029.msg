@@ -26,7 +26,8 @@
 #   reference_station_type  4 bits in NMEA2000          uint8 in ROS2
 #   reference_sattion_id    12 bits in NMEA2000         uint16 in ROS2
 # 
-uint32 timestamp
+
+Nmea2kCommonMsgHeaderStruct header
 uint8 sid
 uint16 date
 float32 time

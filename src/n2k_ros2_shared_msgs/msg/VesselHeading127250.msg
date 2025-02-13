@@ -6,7 +6,7 @@
 # NOTE: refrence is 2bit value, but message also contains 6bit reserved value
 #       The closed bigger datatype is used - uint8
 
-uint32 timestamp
+Nmea2kCommonMsgHeaderStruct header
 uint8 sid
 float64 heading
 float64 deviation

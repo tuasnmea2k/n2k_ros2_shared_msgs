@@ -5,6 +5,6 @@
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
 
-uint32 timestamp
+Nmea2kCommonMsgHeaderStruct header
 float32 latitude
 float32 longitude
