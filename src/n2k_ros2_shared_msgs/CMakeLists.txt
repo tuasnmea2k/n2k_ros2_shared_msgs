@@ -33,7 +33,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/AisClassAStaticAndVoyageRelatedData129794.msg"
   "msg/AisClassBExtendedPositionReport129040.msg"
   "msg/AisClassBPositionReport129039.msg"
-
+  "msg/AisClassBStaticDataPartA129809.msg"
+  "msg/AisClassBStaticDataPartB129810.msg"
+  "msg/AisSafetyRelatedBroadcastMessage129802.msg"
+  "msg/AisSarAircraftPositionReport129798.msg"
 )
 
 if(BUILD_TESTING)
