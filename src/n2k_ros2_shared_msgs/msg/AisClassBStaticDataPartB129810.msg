@@ -23,8 +23,8 @@ uint8   message_id
 uint8   repeat_indicator
 uint32  user_id
 uint8   type_of_ship
-string[7] vendor_id
-string[7] callsign 
+string vendor_id
+string callsign 
 float32 length 
 float32 beam
 float32 position_reference_from_starboard
