@@ -15,7 +15,6 @@ Nmea2kCommonMsgHeaderStruct header
 uint8   message_id
 uint8   repeat_indicator
 uint32  user_id
-string[160] name
+char[]  name
 uint8   ais_transciever_information
-string[1296] safety_related_text
 uint8   sequence_id
