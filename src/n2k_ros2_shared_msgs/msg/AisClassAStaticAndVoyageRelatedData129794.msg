@@ -14,8 +14,8 @@ uint8       message_id
 uint8       repeat_indicator
 uint32      user_id
 uint32      imo_nbr
-string[52]  callsign
-string[160] name
+char[]      callsign        #56 bits ie 7 bytes.
+char[]      name            #160 bits ie 20 bytes
 uint8       ship_type
 float32     length
 float32     beam
@@ -24,8 +24,9 @@ float32     position_reference_from_bow
 uint16      eta_date
 float32     eta_time
 float32     draught
-string[160] vessel_destination
+char[]      vessel_destination
 uint8       ais_version_indicator
 uint8       gnss_type
 bool        dte
 uint8       ais_transciever_information
+uint8       sequence_id
