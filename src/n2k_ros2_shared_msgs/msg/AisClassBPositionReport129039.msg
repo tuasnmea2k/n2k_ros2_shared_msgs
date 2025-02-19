@@ -39,8 +39,6 @@ float32 sog              # radians
 uint32  communications_state
 uint8   ais_transciever_information
 float32 heading
-uint8   regianal_application
-uint8   regional_application_b
 bool    unit_type
 bool    integrated_display
 bool    dsc
@@ -48,5 +46,6 @@ bool    band
 bool    can_handle_msg_22
 bool    ais_mode
 bool    ais_communications_state
+uint8   sequence_id
 # reserved 15 bits are left out
 
