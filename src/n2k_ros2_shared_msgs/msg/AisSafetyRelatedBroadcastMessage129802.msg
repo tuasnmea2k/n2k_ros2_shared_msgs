@@ -17,5 +17,5 @@ uint8   message_id
 uint8   repeat_indicator
 uint32  user_id
 uint8   ais_transciever_information
-string[1296] safety_related_text
+char[]  safety_related_text           #1296 bits
 
