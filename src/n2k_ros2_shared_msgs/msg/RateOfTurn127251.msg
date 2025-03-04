@@ -7,6 +7,6 @@
 
 Nmea2kCommonMsgHeaderStruct header
 uint8   sid
-float32 rate    # radians
+float32 rate_of_turn    # radians
 
 # 24 bists reserved field is not converted to ROS2
