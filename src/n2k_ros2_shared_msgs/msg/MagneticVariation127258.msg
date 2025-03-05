@@ -12,6 +12,6 @@
 Nmea2kCommonMsgHeaderStruct header
 uint8   sid
 uint8   source
-uint16  date 
+uint16  age_of_service 
 float32 variation
 # 16 bits reserved is left out in ROS2
