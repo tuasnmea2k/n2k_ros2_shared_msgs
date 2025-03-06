@@ -38,6 +38,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/AisSafetyRelatedBroadcastMessage129802.msg"
   "msg/AisSarAircraftPositionReport129798.msg"
   "msg/TransmissionParametersDynamic127493.msg"
+  "msg/BinarySwitchBankStatus127501.msg"
   
 )
 
