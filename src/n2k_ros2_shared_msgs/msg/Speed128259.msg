@@ -12,7 +12,7 @@
 Nmea2kCommonMsgHeaderStruct header
 uint8       sid
 float64     speed_water_referenced
-float64     speed_gound_referenced
+float64     speed_ground_referenced
 uint8       speed_water_referenced_type
 uint8       speed_direction
 # reserved 12 bits
