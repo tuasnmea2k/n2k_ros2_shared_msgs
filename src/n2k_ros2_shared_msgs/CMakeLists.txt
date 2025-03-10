@@ -40,6 +40,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/TransmissionParametersDynamic127493.msg"
   "msg/BinarySwitchBankStatus127501.msg"
   "msg/Speed128259.msg"
+  "msg/GnssDops129539.msg"
   
 )
 
