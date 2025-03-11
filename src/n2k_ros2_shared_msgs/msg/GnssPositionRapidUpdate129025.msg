@@ -6,5 +6,5 @@
 #
 
 Nmea2kCommonMsgHeaderStruct header
-float32 latitude
-float32 longitude
+float64 latitude
+float64 longitude

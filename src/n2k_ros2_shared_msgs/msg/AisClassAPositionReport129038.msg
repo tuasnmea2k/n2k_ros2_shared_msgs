@@ -26,8 +26,8 @@ Nmea2kCommonMsgHeaderStruct header
 uint8   message_id
 uint8   repeat_indicator
 uint32  user_id
-float32 longitude 
-float32 latitude
+float64 longitude 
+float64 latitude
 bool    position_accuracy
 bool    raim
 uint8   timestamp_ais
