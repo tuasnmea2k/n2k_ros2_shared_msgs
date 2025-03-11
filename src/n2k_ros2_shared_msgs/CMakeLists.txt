@@ -44,6 +44,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GnssDops129539.msg"
   "msg/GnssSatellitesInView129540.msg"
   "msg/AisUtcAndDateReport129793.msg"
+  "msg/SystemTime126992.msg"
   
 )
 

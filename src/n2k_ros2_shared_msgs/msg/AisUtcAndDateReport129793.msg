@@ -27,7 +27,7 @@ bool    position_accuracy
 bool    raim
 float64 position_time
 uint32  communication_state
-uint8   ais_tranciever_information
+uint8   ais_transciever_information
 uint16  position_date
 uint8   gnss_type
 
