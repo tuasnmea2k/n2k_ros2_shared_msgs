@@ -43,6 +43,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Speed128259.msg"
   "msg/GnssDops129539.msg"
   "msg/GnssSatellitesInView129540.msg"
+  "msg/AisUtcAndDateReport129793.msg"
   
 )
 
