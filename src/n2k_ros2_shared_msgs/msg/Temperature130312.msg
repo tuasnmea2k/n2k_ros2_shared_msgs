@@ -11,6 +11,6 @@ Nmea2kCommonMsgHeaderStruct header
 uint8   sid
 uint8   instance
 uint8   temperature_source
-uint16  actual_temperature
-uint16  set_temperature
+float64  actual_temperature
+float64  set_temperature
 # reserved is left out from ROS2

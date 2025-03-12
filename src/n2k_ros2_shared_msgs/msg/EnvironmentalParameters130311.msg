@@ -12,7 +12,7 @@ Nmea2kCommonMsgHeaderStruct header
 uint8   sid
 uint8   temperature_source
 uint8   humidity_source
-uint16  temperature
-uint16  humidity
-uint16  atmospheric_pressure
+float64  temperature
+float64  humidity
+float64  atmospheric_pressure
 

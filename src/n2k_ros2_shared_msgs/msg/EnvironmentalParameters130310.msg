@@ -5,11 +5,12 @@
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
 # NOTE 
+#       all float32 was 16 bits in NMEA2K.
 #
 
 Nmea2kCommonMsgHeaderStruct header
 uint8   sid
-uint16  water_temperature
-uint16  outside_ambient_temperature
-uint16  atmosphere_temperature
+float64  water_temperature
+float64  outside_ambient_temperature
+float64  atmospheric_pressure
 
