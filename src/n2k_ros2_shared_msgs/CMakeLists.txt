@@ -51,6 +51,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ActualPressure130314.msg"
   "msg/TemperatureExtendedRange130316.msg"
   "msg/MeteorologicalStationData130323.msg"
+  "msg/DirectionData130577.msg"
   
 )
 
