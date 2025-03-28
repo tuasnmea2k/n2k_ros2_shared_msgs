@@ -53,6 +53,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MeteorologicalStationData130323.msg"
   "msg/DirectionData130577.msg"
   "msg/VesselSpeedComponents130578.msg"
+  "msg/FurunoHeave65280.msg"
   
 )
 
