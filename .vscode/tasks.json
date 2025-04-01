@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "colcon build --packages-select n2k_ros_gw --cmake-args -DCMAKE_BUILD_TYPE=Debug -DNMEA2000_MSG_RX_DEBUG=ON -DNMEA2000_MSG_TX_DEBUG=ON",
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${workspaceFolder}/n2k_ros2_gw"
             },
             "group": {
                 "kind": "build",
