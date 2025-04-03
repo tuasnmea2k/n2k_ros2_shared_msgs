@@ -55,6 +55,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/VesselSpeedComponents130578.msg"
   "msg/FurunoHeave65280.msg"
   "msg/FurunoHeelAngleRollInformation130843.msg"
+  "msg/ProductInfo126996.msg"
   
 )
 
