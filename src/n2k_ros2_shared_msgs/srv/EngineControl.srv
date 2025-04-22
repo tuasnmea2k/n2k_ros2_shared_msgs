@@ -1,0 +1,33 @@
+#########################################################################
+# NMEA200_ROS2_GW EngineControl.srv
+# Copyright TurkuAMK 2025
+# Contact: jaakko.saarela@turkuamk.fi
+# NOTE: This Server message is used in NMEA200_ROS2_GW to control engine speed.
+#       engine_instance = 0 -> port side engine
+#       engine_instance = 1 -> starboard side engine
+#       engine_instance = 2 -> both engines
+#       status = false -> Fail
+#       status = true -> success
+#   ERROR CODES:
+#       0 or positive success
+#       -1 - -9 Gneral error codes
+#       -10 - -19 Port side engine error codes
+#       -20 - -29 Starboard side error codes
+#
+#********** Specific Error Codes **************************************
+#
+#       error_code =  0 -> success
+#       error_code = -1 -> unknown instance
+#       error_code = -2 -> Remote control not online
+#       error_code = -10 -> port side engine setting failed
+#       error_code = -11 -> timeout to port side engine DCU
+#       error_code = -20 -> starboard side engine setting failed
+#       error_code = -21 -> timeout to starboard side engine DCU
+#
+
+Nmea2kCommonMsgHeaderStruct header
+uint8   engine_instance
+float64 set_engine_prop_ratio       # set value of the engine = value / maxrpm 
+---
+bool    status  
+int8    error_code
