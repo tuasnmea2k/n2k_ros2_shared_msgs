@@ -3,23 +3,27 @@
 # Copyright TurkuAMK 2025
 # Contact: jaakko.saarela@turkuamk.fi
 # NOTE: This Server message is used in NMEA200_ROS2_GW to control remote status.
-#       remote_status = 0 -> request current status
-#       remote_status = 1 -> set new status
-#
-#       current_status = true -> remote is online
-#       current_status = false -> remote is offline
+#       remote_action = 0 -> request current status
+#       remote_action = 1 -> set new status
+#       
+#       if remote_action is 1 then new_state will be set as new reone_state.
+#       if remote_arcion is 0 then response.current_remote_state wil describe curret value.
+#       response.current_remote_state = true -> remote is online
+#       response.current_remote_state = false -> remote is offline
+#       
 #
 #********** Specific Error Codes **************************************
-#
-#       error_code =  0 -> success
-#       error_code = -1 -> Remote control cannot set online
-#       error_code = -2 -> No response or mismatched response from DCU Motor
-#       error_code = -3 -> No response or mismatched response from DCU rudder
+#       if action fails then response.status will be set false and error_code desribes the error
+#       response.error_code =  0 -> success
+#       response.error_code = -1 -> Remote control cannot set online
+#       response.error_code = -2 -> No response or mismatched response from DCU Motor
+#       response.error_code = -3 -> No response or mismatched response from DCU rudder
 # 
 
 Nmea2kCommonMsgHeaderStruct header
-uint8   remote_status
-bool    new_status
+uint8   remote_action
+bool    new_state
 ---
-bool    current_status  
+bool    status
+bool    current_remote_state  
 int8    error_code
