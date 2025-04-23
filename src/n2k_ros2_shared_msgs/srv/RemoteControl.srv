@@ -1,0 +1,25 @@
+#########################################################################
+# NMEA200_ROS2_GW EngineControl.srv
+# Copyright TurkuAMK 2025
+# Contact: jaakko.saarela@turkuamk.fi
+# NOTE: This Server message is used in NMEA200_ROS2_GW to control remote status.
+#       remote_status = 0 -> request current status
+#       remote_status = 1 -> set new status
+#
+#       current_status = true -> remote is online
+#       current_status = false -> remote is offline
+#
+#********** Specific Error Codes **************************************
+#
+#       error_code =  0 -> success
+#       error_code = -1 -> Remote control cannot set online
+#       error_code = -2 -> No response or mismatched response from DCU Motor
+#       error_code = -3 -> No response or mismatched response from DCU rudder
+# 
+
+Nmea2kCommonMsgHeaderStruct header
+uint8   remote_status
+bool    new_status
+---
+bool    current_status  
+int8    error_code
