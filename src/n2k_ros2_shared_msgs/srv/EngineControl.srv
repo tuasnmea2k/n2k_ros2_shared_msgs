@@ -3,6 +3,9 @@
 # Copyright TurkuAMK 2025
 # Contact: jaakko.saarela@turkuamk.fi
 # NOTE: This Server message is used in NMEA200_ROS2_GW to control engine speed.
+#       engine_action = 0 -> request current value for set engine_instance
+#       engine_action = 1 -> set new value for engine instance
+#
 #       engine_instance = 0 -> port side engine
 #       engine_instance = 1 -> starboard side engine
 #       engine_instance = 2 -> both engines
@@ -26,6 +29,7 @@
 #
 
 Nmea2kCommonMsgHeaderStruct header
+uint8   engine_action
 uint8   engine_instance
 float64 set_engine_prop_ratio       # set value of the engine = value / maxrpm 
 ---
