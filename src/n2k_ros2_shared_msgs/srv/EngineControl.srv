@@ -3,14 +3,23 @@
 # Copyright TurkuAMK 2025
 # Contact: jaakko.saarela@turkuamk.fi
 # NOTE: This Server message is used in NMEA200_ROS2_GW to control engine speed.
+#   REQUEST:
 #       engine_action = 0 -> request current value for set engine_instance
 #       engine_action = 1 -> set new value for engine instance
 #
-#       engine_instance = 0 -> port side engine
-#       engine_instance = 1 -> starboard side engine
-#       engine_instance = 2 -> both engines
+#       engine_port_instance = true -> action is focused on port side engine
+#       engine_starboard_instance = true -> action is focused on starboard side engine
+#   RESPONSE:
 #       status = false -> Fail
 #       status = true -> success
+#       engine_port_instance -> if requested current value requested instance is returned. 
+#                               same values are used as in request side.
+#       engine_port_current_prop_ratio -> current calue is returned in request action case.
+#       engine_starboard_instance -> if requested current value requested instance is returned. 
+#                                    same values are used as in request side.
+
+#       engine_starboard_current_prop_ratio -> current calue is returned in request action case.
+#       error_code -> if someting goes wrong error code is returned.
 #   ERROR CODES:
 #       0 or positive success
 #       -1 - -9 Gneral error codes
@@ -30,8 +39,14 @@
 
 Nmea2kCommonMsgHeaderStruct header
 uint8   engine_action
-uint8   engine_instance
-float64 set_engine_prop_ratio       # set value of the engine = value / maxrpm 
+bool    engine_port_instance
+float64 set_engine_port_prop_ratio       # set value of the engine = value / maxrpm 
+bool    engine_starboard_instance
+float64 set_engine_starboard_prop_ratio       # set value of the engine = value / maxrpm 
 ---
-bool    status  
+bool    status 
+bool    engine_port_instance
+float64 engine_port_current_prop_ratio
+bool    engine_starboard_instance
+float64 engine_starboard_current_prop_ratio
 int8    error_code
