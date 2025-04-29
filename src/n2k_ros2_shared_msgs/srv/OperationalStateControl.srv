@@ -3,14 +3,15 @@
 # Copyright TurkuAMK 2025
 # Contact: jaakko.saarela@turkuamk.fi
 # NOTE: This Server message is used in NMEA200_ROS2_GW to control remote status.
-#       remote_action = 0 -> request current status
-#       remote_action = 1 -> set new status
+#       operational_action = 0 -> request current status
+#       operational_action = 1 -> set new status
 #       
-#       if remote_action is 1 then new_state will be set as new reone_state.
-#       if remote_arcion is 0 then response.current_remote_state wil describe curret value.
-#       response.current_remote_state = true -> remote is online
-#       response.current_remote_state = false -> remote is offline
-#       
+#       if operational_action is 1 then new_state will be set as new operational_state.
+#       if remote_arcion is 0 then response.current_operational_state will describe curret value.
+#       response.current_operational_state = 0-> vessel is in local control only.
+#       response.current_operational_state = 1 -> vessel is in remote controlled only.
+#       response.current_operational_state = 2 -> vessel is in autonomous local conrtolled only.
+#       response.current_operational_state = 3 -> vessel is in aautonomous AND remote controlled.       
 #
 #********** Specific Error Codes **************************************
 #       if action fails then response.status will be set false and error_code desribes the error
@@ -21,9 +22,9 @@
 # 
 
 Nmea2kCommonMsgHeaderStruct header
-uint8   remote_action
-bool    new_state
+uint8   operational_action
+uint8   new_state
 ---
 bool    status
-bool    current_remote_state  
+uint8   current_operational_state  
 int8    error_code

@@ -57,7 +57,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/FurunoHeelAngleRollInformation130843.msg"
   "msg/ProductInfo126996.msg"
   "srv/EngineControl.srv"
-  "srv/RemoteControl.srv"
+  "srv/OperationalStateControl.srv"
   
 )
 
