@@ -1,0 +1,54 @@
+#########################################################################
+# NMEA200_ROS2_GW RudderControl.srv
+# Copyright TurkuAMK 2025
+# Contact: jaakko.saarela@turkuamk.fi
+# NOTE: This Server message is used in NMEA200_ROS2_GW to control engine speed.
+#   REQUEST:
+#       rudder_action = 0 -> request current value of rudder
+#       rudder_action = 1 -> set new value for rudder
+#
+#       rudder_port_instance = true -> action is focused on port side rudder (also default if only one)
+#       rudder_starboard_instance = true -> action is focused on starboard side rudder (in any)
+#       set_rudder_port_position = float to request new value for port side rudder. value is radians.
+#       set_rudder_starboard_position = float to request new value for starboard side rudder. value is radians.
+#   RESPONSE:
+#       status = false -> Fail
+#       status = true -> success
+#       rudder_port_instance -> if requested current rudder value, requested instance value is returned. 
+#                               After value update new values are returned.
+#       rudder_port_current_position -> current value is returned in request action case.
+#       rudder_starboard_instance -> if requested current rudder value, requested instance value is returned. 
+#                                    After value update new values are returned.
+
+#       rudder_starboard_current_position -> current value is returned in request action case.
+#       error_code -> if someting goes wrong error code is returned.
+#   ERROR CODES:
+#       0 or positive success
+#       -1 - -9 Gneral error codes
+#       -10 - -19 Port side rudder error codes
+#       -20 - -29 Starboard side error codes
+#
+#********** Specific Error Codes **************************************
+#
+#       error_code =  0 -> success
+#       error_code = -1 -> unknown rudder instance
+#       error_code = -2 -> Remote control not online
+#       error_code = -10 -> port side rudder setting failed
+#       error_code = -11 -> timeout to port side rudder (NMEA level error, command lost in NMEA bus)
+#       error_code = -20 -> starboard side rudder setting failed
+#       error_code = -21 -> timeout to starboard side rudder
+#
+
+Nmea2kCommonMsgHeaderStruct header
+uint8   rudder_action
+bool    rudder_port_instance
+float64 set_rudder_port_position                 # set value of the rudder = radians
+bool    rudder_starboard_instance
+float64 set_rudder_starboard_position            # set value of the rudder = radians
+---
+bool    status 
+bool    rudder_port_instance
+float64 rudder_port_current_position
+bool    rudder_starboard_instance
+float64 rudder_starboard_current_position
+int8    error_code
