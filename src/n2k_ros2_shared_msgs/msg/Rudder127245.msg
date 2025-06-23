@@ -1,7 +1,7 @@
 #########################################################################
 # NMEA2000 127245 PGN Rudder
 # Copyright TurkuAMK 2025
-# Contact: jaakko.saarela@turkuamk.fi
+# Contact: jaakko.il.saarela@turkuamk.fi
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
 # NOTE: direction_rudder is 3 bit and rest 5 bits are reserved.

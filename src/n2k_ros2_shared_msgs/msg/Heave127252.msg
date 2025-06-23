@@ -1,7 +1,7 @@
 #########################################################################
 # NMEA2000 127252 PGN Heave
 # Copyright TurkuAMK 2025
-# Contact: jaakko.saarela@turkuamk.fi
+# Contact: jaakko.il.saarela@turkuamk.fi
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
 # NOTE heave is 16 bit float but convertes in float32 in ROS2

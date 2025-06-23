@@ -1,7 +1,7 @@
 #########################################################################
 # NMEA2000   PGN 128259 - Speed
 # Copyright TurkuAMK 2025
-# Contact: jaakko.saarela@turkuamk.fi
+# Contact: jaakko.il.saarela@turkuamk.fi
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
 # NOTE: 

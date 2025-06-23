@@ -1,7 +1,7 @@
 #########################################################################
 # NMEA2000 129029 PGN Gnss rapid update
 # Copyright TurkuAMK 2025
-# Contact: jaakko.saarela@turkuamk.fi
+# Contact: jaakko.il.saarela@turkuamk.fi
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #########################################################################
 # NOTE: 

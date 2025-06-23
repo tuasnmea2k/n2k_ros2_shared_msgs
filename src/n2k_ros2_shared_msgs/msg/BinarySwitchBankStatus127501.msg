@@ -1,10 +1,10 @@
 #########################################################################
 # NMEA2000 PGN 127501 - Binary Switch Bank Status
 # Copyright TurkuAMK 2025
-# Contact: jaakko.saarela@turkuamk.fi
+# Contact: jaakko.il.saarela@turkuamk.fi
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
-# NOTE yaw, pitch, roll are 16 bit float but convertes in float32 in ROS2
+# NOTE 
 
 Nmea2kCommonMsgHeaderStruct header
 uint8   instance

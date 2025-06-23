@@ -1,7 +1,7 @@
 #########################################################################
 # NMEA2000  Common Header for VesselID.
 # Copyright TurkuAMK 2025
-# Contact: jaakko.saarela@turkuamk.fi
+# Contact: jaakko.il.saarela@turkuamk.fi
 # REFERENCE: TBD
 #
 # NOTE: 

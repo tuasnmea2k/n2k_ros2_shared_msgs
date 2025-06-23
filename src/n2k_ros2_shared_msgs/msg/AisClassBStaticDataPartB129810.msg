@@ -1,7 +1,7 @@
 #########################################################################
 # NMEA2000  PGN 129810 - AIS Class B static data (msg 24 Part B)
 # Copyright TurkuAMK 2025
-# Contact: jaakko.saarela@turkuamk.fi
+# Contact: jaakko.il.saarela@turkuamk.fi
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
 # NOTE: 

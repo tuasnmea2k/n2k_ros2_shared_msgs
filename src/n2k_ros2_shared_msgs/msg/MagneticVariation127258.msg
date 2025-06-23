@@ -1,7 +1,7 @@
 #########################################################################
 # NMEA2000 127258 PGN Magnetic Variation
 # Copyright TurkuAMK 2025
-# Contact: jaakko.saarela@turkuamk.fi
+# Contact: jaakko.il.saarela@turkuamk.fi
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
 # NOTE: source is 4 bits but converted to uint8 in ROS2

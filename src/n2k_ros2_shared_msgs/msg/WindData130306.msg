@@ -1,7 +1,7 @@
 #########################################################################
 # NMEA2000 130306 PGN WindData
 # Copyright TurkuAMK 2025
-# Contact: jaakko.saarela@turkuamk.fi
+# Contact: jaakko.il.saarela@turkuamk.fi
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 # NOTE: refrence is 3bit value, but also contains 21bit reserved value
 #       This means that 24 bits are used for reference, but since there is not 

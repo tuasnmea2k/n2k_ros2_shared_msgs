@@ -1,7 +1,7 @@
 #########################################################################
 # NMEA2000  Common Header Struct
 # Copyright TurkuAMK 2025
-# Contact: jaakko.saarela@turkuamk.fi
+# Contact: jaakko.il.saarela@turkuamk.fi
 #
 # This stcuct will/should be included in each ROS2 message.
 # Describes common datatypes carried by each ROS msg.

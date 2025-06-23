@@ -1,7 +1,7 @@
 #########################################################################
 # NMEA200_ROS2_GW EngineControl.srv
 # Copyright TurkuAMK 2025
-# Contact: jaakko.saarela@turkuamk.fi
+# Contact: jaakko.il.saarela@turkuamk.fi
 # NOTE: This Server message is used in NMEA200_ROS2_GW to control remote status.
 #       operational_action = 0 -> request current status
 #       operational_action = 1 -> set new status
