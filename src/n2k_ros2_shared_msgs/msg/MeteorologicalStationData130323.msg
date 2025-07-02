@@ -13,8 +13,8 @@
 #       wind_gusts, atmospheric_pressure and ambient_temperature are 16 bits unsigned, but float64 reserved for ROS2
 #       station_name and station_id:
 #           Encoding: The length of the string is determined by a starting length byte. 
-            This count includes the length and type bytes, so any empty string contains count 2. 
-            The 2nd byte contains 0 for UNICODE or 1 for ASCII.
+#           This count includes the length and type bytes, so any empty string contains count 2. 
+#           The 2nd byte contains 0 for UNICODE or 1 for ASCII.
 
 
 Nmea2kCommonMsgHeaderStruct header
