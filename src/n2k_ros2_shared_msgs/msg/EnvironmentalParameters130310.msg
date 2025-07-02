@@ -5,7 +5,7 @@
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
 # NOTE 
-#       all float32 was 16 bits in NMEA2K.
+#       all float64 was 16 bits in NMEA2K.
 #
 
 Nmea2kCommonMsgHeaderStruct header

@@ -5,15 +5,17 @@
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
 # NOTE: 
-#       message_id is 6 bits buit uint8 reserved for ROS2
+#       message_id is 6 bits (0..61) but uint8 reserved for ROS2
 #       repeat_indicator is 2 bits but uint8 reserved for ROS2
+#       longitude is 32 bit signed but float64 used for ROS2
+#       latitude is 32 bit signed but float64 used for ROS2
 #       position_accuracy is 1 bit but bool reserved for ROS2
 #       raim is 1 bit but bool reserved for ROS2
-#       timestamp_ais is 6 bits but uint8 reserved for ROS2
+#       timestamp_ais is 6 (0..63) bits but uint8 reserved for ROS2
 #       cog is 16 bits but float32 reserved for ROS2
 #       sog is 16 bits but float32 reserved for ROS2
 #       communication_state is 19 bits but int32 reserved for ROS2
-#       ais_transciver_information is 5 bits but uint8 reserved for ROS2
+#       ais_transciver_information is 5 (0..29) bits but uint8 reserved for ROS2
 #       heading is 16 bits but float32 is reserved for ROS2
 #       rate_of_turn is 16 bis but float32 is reserved for ROS2
 #       nav_status is 4 bits but uint8 reserved for ROS2

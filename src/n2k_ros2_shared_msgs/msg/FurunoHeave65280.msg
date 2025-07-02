@@ -9,7 +9,7 @@
 #   1 	Manufacturer Code	1855: Furuno 0 .. 2045 11 bits lookup MANUFACTURER_CODE
 #   2	Reserved			    2 bits RESERVED
 #   3	Industry Code	        4: Marine Industry	0 .. 6 3 bits lookup INDUSTRY_CODE
-#   4	Heave		            0.001 m  -2147483.647 .. 2147483.645 32 bits signed NUMBER
+#   4	Heave		            0.001 m  -2147483.647 .. 2147483.645 32 bits signed NUMBER - float64 for ROS2
 #   5	Reserved			    16 bits RESERVED
 #
 

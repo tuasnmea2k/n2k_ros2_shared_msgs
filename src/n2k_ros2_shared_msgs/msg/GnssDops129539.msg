@@ -8,6 +8,7 @@
 #       desired_mode in 3 bit but uint8 reserved for ROS2
 #       actual_mode is 3 bits but uint8 reserved for ROS2
 #       field 4 reserved left out
+#       hdop, vdop, tdop are 16 bit signed, but float64 reserved for ROS2
 #
 
 Nmea2kCommonMsgHeaderStruct header

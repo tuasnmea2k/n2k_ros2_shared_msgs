@@ -7,6 +7,8 @@
 # NOTE: 
 #       message_id is 6 bits buit uint8 reserved for ROS2
 #       repeat_indicator is 2 bits but uint8 reserved for ROS2
+#       longitude is 32 bit signed but float32 reserved for ROS2
+#       latitude is 32 bit signed but float32 reserved for ROS2
 #       position_accuracy is 1 bit but bool reserved for ROS2
 #       raim is 1 bit but bool reserved for ROS2
 #       timestamp_ais is 6 bits but uint8 reserved for ROS2
@@ -38,9 +40,19 @@ bool    raim
 uint8   timestamp_ais
 float32 cog              # radians
 float32 sog              # radians
-uint8   regianal_application
+uint8   regional_application
 uint8   regional_application_b
 uint8   type_of_ship
+float32 true_heading
+float32 gnss_type
+float32 length
+float32 beam
+float32 position_reference_from_starboard
+float32 position_reference_from_bow
+bool    dte
+bool    ais_mode
+uint8   ais_transciever_information
+uint8   sid
 
 
 

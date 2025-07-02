@@ -7,8 +7,8 @@
 # NOTE 
 #       data_mode is 4 bits but uint8 reserved for ROS2
 #       cog_reference is 2 bits, but uint8 reserved for ROS2
-#       3rd filed reserved left out fro ROS2
-#       all float64 are float16 in NMEA2000.
+#       3rd file reserved left out from ROS2
+#       all 16 bit unsigned are float64 in ROS2
 #       
 
 Nmea2kCommonMsgHeaderStruct header

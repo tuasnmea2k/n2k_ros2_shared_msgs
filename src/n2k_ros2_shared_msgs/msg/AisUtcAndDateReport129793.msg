@@ -7,6 +7,8 @@
 # NOTE: 
 #       message_id is 6 bits buit uint8 reserved for ROS2
 #       repeat_indicator is 2 bits but uint8 reserved for ROS2
+#       longitude is 32 bit signed, but float64 reserved for ROS2
+#       latitude is 32 bit signed, but float64 reserved for ROS2
 #       position_accuracy is 1 bit but bool reserved for ROS2
 #       raim is 1 bit but bool reserved for ROS2
 #       position_time is 32 bit but float64 reserved for ROS2

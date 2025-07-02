@@ -5,6 +5,7 @@
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
 # NOTE: 
+#       speed_water_referenced, speed_ground_referenced are 16 bits unsigned, bit float64 reserved for ROS2.
 #       speed_direction id 4 bits but uint8 reserved for ROS2
 #       last 12 bits reserved is left out 
 #

@@ -10,11 +10,11 @@
 #       position_accuracy is 1 bit but bool reserved for ROS2
 #       raim is 1 bit but bool reserved for ROS2
 #       timestamp_ais is 6 bits but uint8 reserved for ROS2
-#       cog is 16 bits but float32 reserved for ROS2
-#       sog is 16 bits but float32 reserved for ROS2
+#       cog is 16 bits but float64 reserved for ROS2
+#       sog is 16 bits but float64 reserved for ROS2
 #       communication_state is 19 bits but int32 reserved for ROS2
 #       ais_transciver_information is 5 bits but uint8 reserved for ROS2
-#       heading is 16 bits but float32 is reserved for ROS2
+#       attitude is 32 bits but float64 is reserved for ROS2
 #       
 
 Nmea2kCommonMsgHeaderStruct header
@@ -26,11 +26,11 @@ float64 latitude
 bool    position_accuracy
 bool    raim
 uint8   timestamp_ais
-float32 cog              # radians
-float32 sog              # radians
+float64 cog              # radians
+float64 sog              # radians
 uint32  communications_state
 uint8   ais_transciever_information
-float32 attitude
+float64 attitude
 uint8   regional_apps
 bool    dte
 # reserved 7 bits are left out

@@ -5,7 +5,7 @@
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
 # NOTE 
-#       temerature is 24 bit, but float64 reserved for ROS2
+#       temperature is 24 bit, but float64 reserved for ROS2
 #       set_temperature is 16 bits, but float64 reserved for ROS2
 
 Nmea2kCommonMsgHeaderStruct header

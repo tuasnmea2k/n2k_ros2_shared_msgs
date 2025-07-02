@@ -7,6 +7,16 @@
 # NOTE: 
 #       message_id is 6 bits buit uint8 reserved for ROS2
 #       repeat_indicator is 2 bits but uint8 reserved for ROS2
+#       length is 16 bits unsigned but uint32 reserved for ROS2
+#       beam is 16 bits unsigned but uint32 reserved for ROS2
+#       position_reference_from_starboard is 16 bits unsigned but uint32 reserved for ROS2
+#       position_reference_from_bow is 16 bits unsigned but uint32 reserved for ROS2
+#       draught is 16 bits unsigned, but uint32 used for ROS2
+#       ais_version_indicator is 2 bits but uint8 reserved for ROS2
+#       dte is 1 bit but bool reserved fro ROS2
+#       ais_transciever_information is 5 bits but uint8 reserved for ROS2
+#       field 19 left out from ROS2
+#       field 21 left out from ROS2       
 #
 
 Nmea2kCommonMsgHeaderStruct header

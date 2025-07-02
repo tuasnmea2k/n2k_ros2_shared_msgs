@@ -4,8 +4,8 @@
 # Contact: jaakko.il.saarela@turkuamk.fi
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
-# NOTE 
-#
+# NOTE:
+#           all fieds are 16 bit signed, but float64 reserved for ROS2.
 
 Nmea2kCommonMsgHeaderStruct header
 float64 longitudal_speed_water_ref

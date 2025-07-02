@@ -7,10 +7,10 @@
 # NOTE: 
 #       message_id is 6 bits buit uint8 reserved for ROS2
 #       repeat_indicator is 2 bits but uint8 reserved for ROS2
-#       length is 16 bits but float32 reserved for ROS2
-#       beam is 16 bits but float32 reserved for ROS2
-#       position_reference_from_starboard is 16 bits but float32 reserved for ROS2
-#       position_reference_from_bow is 16 bits but float32 reserved for ROS2
+#       length is 16 bits but float64 reserved for ROS2
+#       beam is 16 bits but float64 reserved for ROS2
+#       position_reference_from_starboard is 16 bits but float64 reserved for ROS2
+#       position_reference_from_bow is 16 bits but float64 reserved for ROS2
 #       field 12 reserves has been left out from ROS2
 #       field 13 spare has been left out from ROS2
 #       gnss_type is 4 bits but uint8 reserved for ROS2
@@ -25,11 +25,11 @@ uint32  user_id
 uint8   type_of_ship
 char[]  vendor_id
 char[]  callsign 
-float32 length 
-float32 beam
-float32 position_reference_from_starboard
-float32 position_reference_from_bow
-float32 mothership_user_id
+float64 length 
+float64 beam
+float64 position_reference_from_starboard
+float64 position_reference_from_bow
+float64 mothership_user_id
 uint8   gnss_type
 uint8   ais_transciever_information
 uint8   sequence_id
