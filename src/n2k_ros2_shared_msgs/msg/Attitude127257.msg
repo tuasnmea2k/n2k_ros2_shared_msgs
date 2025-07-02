@@ -4,12 +4,12 @@
 # Contact: jaakko.il.saarela@turkuamk.fi
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
-# NOTE yaw, pitch, roll are 16 bit float but convertes in float32 in ROS2
+# NOTE yaw, pitch, roll are 16 bit float but convertes in float64 in ROS2
 
 Nmea2kCommonMsgHeaderStruct header
 uint8   sid
-float32 yaw     # radians
-float32 pitch   # radians
-float32 roll    # radians  
+float64 yaw     # radians
+float64 pitch   # radians
+float64 roll    # radians  
 
 # 8 bists reserved field is not converted to ROS2

@@ -21,6 +21,6 @@ uint16  manufacturer
 uint8   industry_code
 uint8   data_a
 uint8   data_b
-float64 yaw
-float64 pitch
-float64 roll
+float64 yaw             #rad
+float64 pitch           #rad
+float64 roll            #rad

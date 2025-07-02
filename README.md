@@ -19,14 +19,18 @@ The repository defines common messages that are used for communication between t
 - in testing environment also vcan can be used
 
 ### Building the Project
+1. ask the access to the repo (jaakko.il.saarela@turkuamk.fi)
+1. Fork the current repo
+    ```bash
+    git clone https://github.com/jasa66/n2k_ros2_shared_msgs.git
 
-1. Clone the repository:
+2. Clone the repository:
     ```bash
     git clone https://github.com/yourusername/n2k_ros2_shared_msgs.git
     cd n2k_ros2_shared_msgs
     ```
 
-2. Build the project using colcon:
+3. Build the project using colcon:
     ```bash
     colcon build
     ```
@@ -41,4 +45,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 # Copyright and contact
 
-jaakko.saarela@turkuamk.fi
+jaakko.il.saarela@turkuamk.fi

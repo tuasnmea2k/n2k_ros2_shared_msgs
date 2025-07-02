@@ -5,7 +5,7 @@
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
 # NOTE: 
-#          
+#           source is 4 bits but uint8 used for ROS2.
 #
 
 Nmea2kCommonMsgHeaderStruct header

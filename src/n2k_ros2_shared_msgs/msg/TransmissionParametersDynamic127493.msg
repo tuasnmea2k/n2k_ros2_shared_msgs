@@ -13,6 +13,6 @@
 Nmea2kCommonMsgHeaderStruct header
 uint8   instance
 uint8   gear
-uint16  oil_pressure
-uint16  oil_temperature
+uint16  oil_pressure            # pascals
+uint16  oil_temperature         # kelvins
 uint8   discrete_status

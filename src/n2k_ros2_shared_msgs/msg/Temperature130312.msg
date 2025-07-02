@@ -5,6 +5,7 @@
 # REFERENCE: https://canboat.github.io/canboat/canboat.html
 #
 # NOTE 
+#           actual_temperature and set_temperature are 16 bits unsigned, but float64 is reserved for ROS2.
 #
 
 Nmea2kCommonMsgHeaderStruct header

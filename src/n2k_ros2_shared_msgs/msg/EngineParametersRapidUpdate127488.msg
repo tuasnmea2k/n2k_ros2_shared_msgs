@@ -6,7 +6,7 @@
 #
 # NOTE: 
 #       variation is 16 bit float but converted to float32 in ROS2
-#       Speed is float16 but converted to float32 in ROS2
+#       Speed is float16 but converted to float64 in ROS2
 #       
 # ENGINE_INSTANCE (0 - 255)
 #       Value	Description
@@ -15,7 +15,7 @@
 
 Nmea2kCommonMsgHeaderStruct header
 uint8   instance
-float32 speed
+float64 speed
 uint16  boost_pressure
 uint8   trim
 # 16 bits reserved left out in ROS2
