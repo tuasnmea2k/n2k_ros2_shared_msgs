@@ -1,31 +1,28 @@
 # NMEA2000 SHARED MESSAGES
 
-This repository is for the NMEA2000-ROS-GW publisher and ROS2 subscribers. The idea is to have common messages between the publisher gateway and each subscriber.
+This repository contains the ROS 2 message definitions for the NMEA2000-ROS2-SHARED-MSGS project.
 
 ## Overview
-
-The NMEA2000-ROS-GW project aims to facilitate communication between NMEA2000 devices and ROS2 nodes. It includes a publisher gateway that translates NMEA2000 messages into ROS2 messages and multiple subscribers that can receive and process these messages.
+The NMEA2000-ROS2-SHARED-MSGS project provides ROS 2 message definitions for selected NMEA 2000 messages.The NMEA2000-ROS2-SHARED-MSGS project is ROS2 conversions of selected NMEA2K mesasges. 
 
 ## Common Messages
 
-The repository defines common messages that are used for communication between the publisher gateway and the subscribers. These messages ensure that all subscribers can understand and process the data received from the NMEA2000 network.
+This repository defines common messages used for communication between the publisher gateway and subscribers. These messages ensure that all subscribers can correctly interpret and process data received from the NMEA2000 network.
 
 ## Getting Started
 
 ### Prerequisites
-- Ubuntu 22.04 installed in the system (either host or Docker Container)
-- ROS2 installed on your system.
-- NMEA2000 hardware and drivers.
-- in testing environment also vcan can be used
+- Ubuntu 22.04 or 24.04 installed on your system (either on the host or in a Docker container)
+- ROS2 (Humble) installed on your system
 
 ### Building the Project
-1. ask the access to the repo (jaakko.il.saarela@turkuamk.fi)
-1. Fork the current repo
+1. Fork this repository if you intend to contribute (otherwise, you can simply clone it):
     ```bash
-    git clone https://github.com/jasa66/n2k_ros2_shared_msgs.git
+    https://github.com/tuasnmea2k/n2k_ros2_shared_msgs
 
-2. Clone the repository:
+2. Clone the repository to local drive:
     ```bash
+    # Note: replace with your GitHub username if forking
     git clone https://github.com/yourusername/n2k_ros2_shared_msgs.git
     cd n2k_ros2_shared_msgs
     ```
@@ -35,14 +32,10 @@ The repository defines common messages that are used for communication between t
     colcon build
     ```
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request with your changes.
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 # Copyright and contact
-
+Copyright: Turku University of Applied Sciences
 jaakko.il.saarela@turkuamk.fi
